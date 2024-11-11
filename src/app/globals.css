@@ -1,6 +1,34 @@
-a{
+:root .ligth {
+  --cor-00: #ffffff;
+  --cor-01: #232323;
+  --cor-02: #000000;
+  --cor-p1: #b2987d;
+}
+
+:root .dark {
+  --cor-00: #000000;
+  --cor-01: #232323;
+  --cor-02: #ffffff;
+  --cor-p1: #b2987d;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body:has(.ligth) {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+body:has(.dark) {
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
